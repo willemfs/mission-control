@@ -14,6 +14,7 @@ import DataIr from '../components/DataIr';
 import DataImu from '../components/DataImu';
 import DataMisc from '../components/DataMisc';
 import '../assets/Data.css';
+import MockData from '../cur_data_format.json';
 
 import Chart from 'chart.js';
 
@@ -26,6 +27,15 @@ class DataPage extends Component {
   }
 
   componentDidMount() {
+    console.log(MockData);
+    let data = MockData.data;
+    for (let section=0; section < data.length; section++) {
+      console.log('-------');
+      console.log(data[section].section_name);
+      for (let component = 0; component < data[section].content.length; component++) {
+        console.log(data[section].content[component]);
+      }
+    }
     Chart.pluginService.register({
       beforeDraw: function (chart) {
         if (chart.config.options.elements.center) {

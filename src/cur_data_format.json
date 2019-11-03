@@ -1,0 +1,71 @@
+{
+  "data": [
+    {
+      "section_name": "Last transmission",
+      "content": [
+        {
+          "type": "single_string",
+          "label": "Call sign",
+          "value": "WL9XZE"
+        },
+        {
+          "type": "time",
+          "label": "Last transmission",
+          "value": 891289390128391
+        },
+        {
+          "type": "single_value",
+          "label": "Maximum voltage",
+          "value": 102031.3132,
+          "sig_figures": 8,
+          "unit": "V"
+        }
+      ]
+    },
+    {
+      "section_name": "Lion Batteries",
+      "content": [
+        {
+          "type": "pie_perc",
+          "label": "Battery 1 charge",
+          "sub_label": "Discharing",
+          "value": 0.84
+        },
+        {
+          "type": "pie_perc",
+          "label": "Battery 1 charge",
+          "sub_label": null,
+          "value": 0.9
+        },
+        {
+          "type": "value_series",
+          "label": "Voltage",
+          "values": [
+            {
+              "label": "LiOn #1",
+              "value": 4.041,
+              "unit": "V",
+              "sig_figures": 5
+            },
+            {
+              "label": "LiOn #2",
+              "value": 3.20,
+              "unit": "V",
+              "sig_figures": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "section_name": "Misc Information",
+      "content": [
+        {
+          "type": "boolean",
+          "label": "Antenna deployed",
+          "value": true
+        }
+      ]
+    }
+  ]
+}
